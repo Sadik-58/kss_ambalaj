@@ -89,11 +89,9 @@ public class UserService {
     }
 
     public String saveUser(RegisterRequest registerRequest) {
-        Role role = roleService.findByRoleName(RoleType.ROLE_CUSTOMER);
+        Role role = roleService.findByRoleName(RoleType.ROLE_ADMIN);
         Set<Role> roles = new HashSet<>();
         roles.add(role);
-
-
         User user = null;
         String encodedPassword =  passwordEncoder.encode(registerRequest.getPassword());
         if(userRepository.existsByEmail(registerRequest.getEmail())) {
