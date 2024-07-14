@@ -7,9 +7,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/kss_db
+    url: jdbc:postgresql://dpg-cq9qrijv2p9s73cmo5d0-a:5432/kss_db
     username: kss
-    password: 1234
+    password: SEH79LZkITAjxqfR9mmFWyHFUec53fPk
     driver-class-name: org.postgresql.Driver
     hikari:
       auto-commit: false
