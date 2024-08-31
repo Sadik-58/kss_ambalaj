@@ -5,11 +5,19 @@ server:
     include-message: always
     include-stacktrace: always
 
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://dpg-cq9qrijv2p9s73cmo5d0-a:5432/kss_db
+#    username: kss
+#    password: SEH79LZkITAjxqfR9mmFWyHFUec53fPk
+#    driver-class-name: org.postgresql.Driver
+#    hikari:
+#      auto-commit: false
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-cq9qrijv2p9s73cmo5d0-a:5432/kss_db
-    username: kss
-    password: SEH79LZkITAjxqfR9mmFWyHFUec53fPk
+    url: jdbc:postgresql://aws-0-eu-central-1.pooler.supabase.com:6543/postgres
+    username: postgres.viikjacelgerugyabqiq
+    password: Lacivert.3992
     driver-class-name: org.postgresql.Driver
     hikari:
       auto-commit: false
